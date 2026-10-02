@@ -7,9 +7,18 @@ export default defineConfig({
     timeout: 5_000
   },
   fullyParallel: true,
-  reporter: [['list']],
+  outputDir: 'test-results/artifacts',
+  reporter: [
+    ['list'],
+    ['html', { open: 'never', outputFolder: 'playwright-report' }],
+    ['json', { outputFile: 'test-results/results.json' }],
+    ['junit', { outputFile: 'test-results/junit.xml' }],
+    ['blob', { outputDir: 'test-results/blob-report' }]
+  ],
   use: {
-    trace: 'on-first-retry'
+    trace: 'on',
+    screenshot: 'on',
+    video: 'on'
   },
   projects: [
     {

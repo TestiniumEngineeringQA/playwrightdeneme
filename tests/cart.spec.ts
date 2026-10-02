@@ -8,7 +8,7 @@ test.describe('Shopping cart', () => {
         <button type="button" data-testid="add-product">Add keyboard</button>
         <output data-testid="cart-count">0</output>
         <script>
-          document.querySelector('[data-testid="add-product"]').addEventListener('click', () => {
+          document.querySelector('[data-testid="add-producttt"]').addEventListener('click', () => {
             document.querySelector('[data-testid="cart-count"]').textContent = '1';
           });
         </script>
