@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('Login page', () => {
-  test('shows a successful login message @smoke', async ({ page }) => {
+  test('showsssss a successful login message @smoke', async ({ page }) => {
     await page.setContent(`
       <main>
         <h1>Testinium Demo</h1>
