@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('Shopping cart', () => {
-  test('addssssssssscssssssxsssaadenemeademoeeskart233aldamlassss a product to the cart @regression', async ({ page }) => {
+  test('addssssssssscssssssxsssaadenemeademoeeskart233aldamasdasdlassss a product to the cart @regression', async ({ page }) => {
     await page.setContent(`
       <section>
         <h1>Products</h1>
